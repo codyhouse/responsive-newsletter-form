@@ -269,6 +269,7 @@ header h1 {
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
   z-index: 2;
+  line-height: 50px;
 }
 .is-active .cd-submit {
   display: block;
@@ -278,6 +279,11 @@ header h1 {
 }
 .no-touch .cd-submit:hover, .cd-submit:focus {
   background-color: #4e5974;
+}
+@media only screen and (min-width: 768px) {
+  .cd-submit {
+    line-height: 90px;
+  }
 }
 
 @-webkit-keyframes cd-bounce-in {
